@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "234502917667",
+    "project_id": "matdaan-fdbad",
+    "storage_bucket": "matdaan-fdbad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234502917667:android:d6d18cc4f145fa13712b96",
+        "android_client_info": {
+          "package_name": "com.example.matdaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234502917667-t9lirn1ieok210nvhkfke2i5cvkuvqk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6fiGKREtAXpuLmnJ8SJTJrYgabsaLCDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234502917667-t9lirn1ieok210nvhkfke2i5cvkuvqk3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
