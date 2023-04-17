@@ -10,7 +10,7 @@ import android.os.Handler;
 import com.example.matdaan.activities.HomeActivity;
 import com.example.matdaan.activities.LoginActivity;
 
-
+// BHAI SIRF EK BAAR CHECK KR RAHA KAISE HOTA HAI
 
 
 public class MainActivity extends AppCompatActivity {
