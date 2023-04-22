@@ -101,6 +101,8 @@ public class HomeActivity extends AppCompatActivity {
 
                     String start = starting.getText().toString();
                     String end = ending.getText().toString();
+                if(check(start,end,s[]))
+                    {
                 if(!TextUtils.isEmpty(start)&&!TextUtils.isEmpty(end)) {
                     Intent intent = new Intent(HomeActivity.this, farecompare.class);
                     intent.putExtra("keystart", start);
@@ -109,9 +111,36 @@ public class HomeActivity extends AppCompatActivity {
                 }else{
                     Toast.makeText(HomeActivity.this,"Please enter location",Toast.LENGTH_SHORT).show();
                 }
+                }
             }
         });
     }
 
-
+private boolean check(String start,String end,String s[]){
+        int a=0,b=0;
+        for(int i:s){
+            if(i.equals(start))
+            {
+                a=1;
+                break;
+            }
+        }
+        if(a==1){
+        for(int i1:s){
+            if(i1.equals(end))
+            {
+                b=1;
+                break;
+            }
+        }
+        }
+        else{
+        return false;
+        }
+        if(a==1&&b==1){
+        return true;
+        }
+        else
+            return false;
+    }
 }
