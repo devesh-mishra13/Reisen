@@ -26,9 +26,32 @@ public class farecompare extends AppCompatActivity {
 
 
         fareshow(start,end,"bennett university","ndls",51);
-        fareshow(start,end,"bennett university","pari chowk",11);
+        fareshow(start,end,"bennett university","pari chowk",10);
         fareshow(start,end,"bennett university","depot",8);
         fareshow(start,end,"bennett university","sector 51",37);
+        fareshow(start,end,"bennett university","the grand venice mall",8.2);
+        fareshow(start,end,"bennett university","decathlon",14.2);
+        fareshow(start,end,"bennett university","gautam buddha university",7.9);
+        fareshow(start,end,"bennett university","alpha 2 main market",10.8);
+        fareshow(start,end,"bennett university","sharda university",15.3);
+        fareshow(start,end,"bennett university","omaxe palm greens",8.8);
+        fareshow(start,end,"bennett university","gbu shopping complex",9.83);
+        fareshow(start,end,"bennett university","eldeco shopping complex",5.8);
+        fareshow(start,end,"bennett university","knowledge park 2 ",13.57);
+        fareshow(start,end,"bennett university","akshardham",44.2);
+        fareshow(start,end,"bennett university","lotus temple",43.8);
+        fareshow(start,end,"bennett university","red fort",49.6);
+        fareshow(start,end,"bennett university","india gate",49);
+        fareshow(start,end,"bennett university","connaught place",50.3);
+        fareshow(start,end,"bennett university","gaziabad",42.6);
+        fareshow(start,end,"bennett university","humayun's tomb",47.7);
+        fareshow(start,end,"bennett university","indira gandhi international airport",59);
+        fareshow(start,end,"bennett university","anand vihar terminal",47);
+        fareshow(start,end,"bennett university","vaishali metro station",53);
+        fareshow(start,end,"bennett university","mandi house metro station",47.7);
+        fareshow(start,end,"bennett university","worlds of wonder",37.6);
+        fareshow(start,end,"bennett university","botanical garden",36);
+        fareshow(start,end,"bennett university","rohini",75);
     }
 
     private void fareshow(String start,String end,String starting,String ending,int dis)
