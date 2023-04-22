@@ -4,43 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/himteshno"
     tools:context=".activities.HomeActivity">
 
-    <EditText
-        android:id="@+id/Starting"
-        android:layout_width="368dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:text="Current location"
-        app:layout_constraintBottom_toTopOf="@+id/Ending"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705" />
+        <EditText
+            android:id="@+id/Starting"
+            android:layout_width="340dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/newrounded"
+            android:hint="Current Location"
+            android:paddingStart="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/Ending"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.872" />
 
-    <EditText
-        android:id="@+id/Ending"
-        android:layout_width="369dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="48dp"
-        android:text="Destination"
-        app:layout_constraintBottom_toTopOf="@+id/Searching"
-        app:layout_constraintEnd_toEndOf="@+id/Starting"
-        app:layout_constraintHorizontal_bias="0.551"
-        app:layout_constraintStart_toStartOf="@+id/Starting" />
+        <EditText
+            android:id="@+id/Ending"
+            android:layout_width="340dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/newrounded"
+            android:hint="Destination"
+            android:paddingStart="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/Searching"
+            app:layout_constraintEnd_toEndOf="@+id/Starting"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="@+id/Starting" />
 
-    <Button
-        android:id="@+id/Searching"
-        android:layout_width="101dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="340dp"
-        android:text="Search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/Ending"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/Ending" />
+        <Button
+            android:id="@+id/Searching"
+            android:layout_width="101dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="120dp"
+            android:background="@drawable/rounded"
+            android:text="Search"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/Ending"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="@+id/Ending" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:background="@drawable/himteshno"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/animation"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:background="@drawable/rounded"
+            android:text="LogOut"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Searching"
+            app:layout_constraintVertical_bias="0.235" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

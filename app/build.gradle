@@ -48,6 +48,7 @@ dependencies {
     //implementation 'com.theartofdev.edmodo:android-image-cropper:'
 //    implementation("com.vanniktech:android-image-cropper:4.5.0")
     implementation("com.vanniktech:android-image-cropper:4.3.3")
-    implementation 'com.uber.sdk:rides-android:1.0.0'
-    implementation 'com.google.code.gson:gson:2.8.6'
+//    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+//    implementation 'com.uber.sdk:rides-android:1.0.0'
+//    implementation 'com.google.code.gson:gson:2.8.6'
 }

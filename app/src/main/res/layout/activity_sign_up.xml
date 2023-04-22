@@ -4,8 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.SignUpActivity"
-    android:background="@drawable/bb">
+    android:background="@drawable/himteshno"
+    tools:context=".activities.SignUpActivity">
+
+
+    <!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardView"-->
+<!--        android:layout_width="340dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        app:cardCornerRadius="16dp"-->
+<!--        app:cardElevation="16dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/logo">-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
 
     <TextView
         android:id="@+id/logo"
@@ -19,110 +35,134 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.049" />
 
+<!--    <LinearLayout-->
+<!--        android:layout_width="340dp"-->
+<!--        android:layout_height="428dp"-->
+<!--        android:background="@drawable/himteshno"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="0dp"-->
+<!--        tools:layout_editor_absoluteX="35dp"-->
+<!--        tools:layout_editor_absoluteY="130dp">-->
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="match_parent"
+    <!--            <TextView-->
+        <!--                android:id="@+id/forget_password"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="end"-->
+        <!--                android:layout_marginTop="8dp"-->
+        <!--                android:layout_marginEnd="8dp"-->
+        <!--                android:text="Forget Password"-->
+        <!--                android:textColor="@color/black" />-->
+
+    <!--    </LinearLayout>-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/newrounded"
+        android:hint="Name"
+        android:paddingStart="10dp"
+        android:textAlignment="gravity"
+        app:layout_constraintBottom_toTopOf="@+id/user_email"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/newrounded"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/user_name"
+        app:layout_constraintStart_toStartOf="@+id/user_name"
+        app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+    <EditText
+        android:id="@+id/user_phone_number"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/newrounded"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/user_email"
+        app:layout_constraintStart_toStartOf="@+id/user_email"
+        app:layout_constraintTop_toBottomOf="@+id/user_email" />
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="299dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/newrounded"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/user_phone_number"
+        app:layout_constraintStart_toStartOf="@+id/user_phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/user_phone_number" />
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        app:cardCornerRadius="16dp"
-        app:cardElevation="16dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded"
+        android:padding="8dp"
+        android:text="SignUp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo">
-
-        <LinearLayout
-            android:layout_width="380dp"
-            android:background="@drawable/aa"
-            android:layout_height="450dp"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/profile_image"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:layout_gravity="center"
-                android:src="@drawable/profile"
-                app:civ_border_width="2dp"
-                app:civ_border_color="#FF000000"/>
-
-            <EditText
-                android:id="@+id/user_name"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:hint="Name"
-                 />
-
-            <EditText
-                android:id="@+id/user_email"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:hint="Email"
-                android:inputType="textEmailAddress" />
-
-            <EditText
-                android:id="@+id/user_national_id"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:hint="National ID"
-                android:inputType="number" />
-
-            <EditText
-                android:id="@+id/user_password"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:hint="Password"
-                android:inputType="textPassword" />
-
-<!--            <TextView-->
-<!--                android:id="@+id/forget_password"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_gravity="end"-->
-<!--                android:layout_marginTop="8dp"-->
-<!--                android:layout_marginEnd="8dp"-->
-<!--                android:text="Forget Password"-->
-<!--                android:textColor="@color/black" />-->
-
-            <Button
-                android:id="@+id/signup_btn"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:background="@color/black"
-                android:padding="8dp"
-                android:text="SignUp"
-                android:textAllCaps="false" />
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747" />
 
     <TextView
         android:id="@+id/have_acc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_width="303dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="88dp"
         android:text="Already have account? Login.."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/cardView"
-        app:layout_constraintStart_toStartOf="@+id/cardView"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_btn"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

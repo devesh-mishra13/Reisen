@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
-
+import com.google.firebase.auth.FirebaseAuth;
 import com.example.matdaan.activities.HomeActivity;
 import com.example.matdaan.activities.LoginActivity;
 
@@ -32,12 +32,23 @@ public class MainActivity extends AppCompatActivity {
         boolean bol =sharedPreferences.getBoolean(IsLogin,false);
 
         new Handler().postDelayed(()->{
-            if(bol){
-                startActivity(new Intent(MainActivity.this, HomeActivity.class));
-                finish();
-            }
-            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+        if(FirebaseAuth.getInstance().getCurrentUser()!=null)
+        {
+            startActivity(new Intent(MainActivity.this,HomeActivity.class));
             finish();
-        },3000);
+        }
+        else {
+            startActivity(new Intent(MainActivity.this,LoginActivity.class));
+            finish();
+        }},3000);
+
+//        new Handler().postDelayed(()->{
+//            if(bol){
+//                startActivity(new Intent(MainActivity.this, HomeActivity.class));
+//                finish();
+//            }
+//            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+//            finish();
+//        },3000);
     }
 }

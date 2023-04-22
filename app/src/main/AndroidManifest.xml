@@ -7,20 +7,28 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <supports-screens android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="matdaan"
+        android:icon="@mipmap/himteshfinal"
+        android:label="Reisen"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".ForgetPasswordActivity"
+            android:name=".activities.farecompare"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".activities.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.HomeActivity"
             android:exported="false" />
         <activity
             android:name="com.canhub.cropper.CropImageActivity"

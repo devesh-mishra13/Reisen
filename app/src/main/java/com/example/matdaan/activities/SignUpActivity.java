@@ -10,8 +10,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.media.Image;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -21,8 +19,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.canhub.cropper.CropImage;
-import com.canhub.cropper.CropImageView;
 import com.example.matdaan.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -71,7 +67,7 @@ public class SignUpActivity extends AppCompatActivity {
         userName=findViewById(R.id.user_name);
         userPassword=findViewById(R.id.user_password);
         userEmail=findViewById(R.id.user_email);
-        userNationalID=findViewById(R.id.user_national_id);
+        userNationalID=findViewById(R.id.user_phone_number);
         signUpBtn=findViewById(R.id.signup_btn);
 
         mAuth=FirebaseAuth.getInstance();
