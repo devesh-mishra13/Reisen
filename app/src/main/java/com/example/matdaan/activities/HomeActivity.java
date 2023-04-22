@@ -94,6 +94,7 @@ public class HomeActivity extends AppCompatActivity {
                 finish();
             }
         });
+        String s[]={"bennett university","pari chowk","depot","ndls"};
 
         respect.setOnClickListener(new View.OnClickListener() {
             @Override
