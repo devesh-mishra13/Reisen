@@ -51,7 +51,12 @@ public class farecompare extends AppCompatActivity {
         fareshow(start,end,"bennett university","mandi house metro station",47.7);
         fareshow(start,end,"bennett university","worlds of wonder",37.6);
         fareshow(start,end,"bennett university","botanical garden",36);
-        fareshow(start,end,"bennett university","rohini",75);
+        fareshow(start,end,"bennett university","jantar mantar",50);
+        fareshow(start,end,"bennett university","rashtrapati bhavan museum",53);
+        fareshow(start,end,"bennett university","hauz khas fort",51);
+        fareshow(start,end,"bennett university","aiims hospital",48);
+        fareshow(start,end,"bennett university","faridabad",54);
+        
     }
 
     private void fareshow(String start,String end,String starting,String ending,double dis)
