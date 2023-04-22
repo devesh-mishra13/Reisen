@@ -84,7 +84,7 @@ public class HomeActivity extends AppCompatActivity {
 //            }
 //        });
 
-                logout.setOnClickListener(new View.OnClickListener() {
+        logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
@@ -94,32 +94,32 @@ public class HomeActivity extends AppCompatActivity {
                 finish();
             }
         });
-        String s[]={"bennett university","pari chowk","depot","ndls"};
+        String s[]={"bennett university","pari chowk","depot","ndls","the grand venice mall","decathlon","gautam buddha university"};
 
         respect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                    String start = starting.getText().toString();
-                    String end = ending.getText().toString();
-                if(check(start,end,s[]))
-                    {
-                if(!TextUtils.isEmpty(start)&&!TextUtils.isEmpty(end)) {
-                    Intent intent = new Intent(HomeActivity.this, farecompare.class);
-                    intent.putExtra("keystart", start);
-                    intent.putExtra("keyend", end);
-                    startActivity(intent);
-                }else{
-                    Toast.makeText(HomeActivity.this,"Please enter location",Toast.LENGTH_SHORT).show();
-                }
+                String start = starting.getText().toString();
+                String end = ending.getText().toString();
+                if(check(start,end,s))
+                {
+                    if(!TextUtils.isEmpty(start)&&!TextUtils.isEmpty(end)) {
+                        Intent intent = new Intent(HomeActivity.this, farecompare.class);
+                        intent.putExtra("keystart", start);
+                        intent.putExtra("keyend", end);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(HomeActivity.this,"Please enter location",Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         });
     }
 
-private boolean check(String start,String end,String s[]){
+    private boolean check(String start,String end,String s[]){
         int a=0,b=0;
-        for(int i:s){
+        for(String i:s){
             if(i.equals(start))
             {
                 a=1;
@@ -127,19 +127,19 @@ private boolean check(String start,String end,String s[]){
             }
         }
         if(a==1){
-        for(int i1:s){
-            if(i1.equals(end))
-            {
-                b=1;
-                break;
+            for(String i1:s){
+                if(i1.equals(end))
+                {
+                    b=1;
+                    break;
+                }
             }
         }
-        }
         else{
-        return false;
+            return false;
         }
         if(a==1&&b==1){
-        return true;
+            return true;
         }
         else
             return false;
