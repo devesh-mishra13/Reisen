@@ -94,7 +94,7 @@ public class HomeActivity extends AppCompatActivity {
                 finish();
             }
         });
-        String s[]={"bennett university","pari chowk","depot","ndls","the grand venice mall","decathlon","gautam buddha university"};
+        String s[]={"bennett university","pari chowk","depot","ndls","the grand venice mall","decathlon","gautam buddha university","akshardham","omaxe palm greens","sharda university","sector 51","alpha 2 main market","eldeco shopping complex","red fort","lotus temple","gaziabad","humayun's tomb","indira gandhi international airport","anand vihar terminal","vaishali metro station","mandi house metro station","worlds of wonder","botanical garden","rohini"};
 
         respect.setOnClickListener(new View.OnClickListener() {
             @Override
