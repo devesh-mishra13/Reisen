@@ -11,8 +11,8 @@ import com.example.matdaan.R;
 public class farecompare extends AppCompatActivity {
 
 //    private String starting,ending;
-    private int d;
-    private int buy;
+    private double d;
+    private double buy;
     private TextView uberfare,olafare;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +26,7 @@ public class farecompare extends AppCompatActivity {
 
 
         fareshow(start,end,"bennett university","ndls",51);
-        fareshow(start,end,"bennett university","pari chowk",10);
+        fareshow(start,end,"bennett university","pari chowk",11);
         fareshow(start,end,"bennett university","depot",8);
         fareshow(start,end,"bennett university","sector 51",37);
         fareshow(start,end,"bennett university","the grand venice mall",8.2);
@@ -54,7 +54,7 @@ public class farecompare extends AppCompatActivity {
         fareshow(start,end,"bennett university","rohini",75);
     }
 
-    private void fareshow(String start,String end,String starting,String ending,int dis)
+    private void fareshow(String start,String end,String starting,String ending,double dis)
     {
         if((start.equalsIgnoreCase(starting.trim())&&end.equalsIgnoreCase(ending.trim()))||(start.equalsIgnoreCase(ending.trim())&&end.equalsIgnoreCase(starting.trim())))
         {
@@ -77,8 +77,8 @@ public class farecompare extends AppCompatActivity {
                 buy = d*6;
             buy += (buy/2);
             buy +=(buy*0.18);
-            uberfare.setText(Integer.toString(buy));
-            olafare.setText(Integer.toString((int) (buy+(100.0*Math.random()))));
+            uberfare.setText(Integer.toString((int)buy));
+            olafare.setText((Integer.toString((int) (buy+(100.0*Math.random())))));
         }
     }
 
